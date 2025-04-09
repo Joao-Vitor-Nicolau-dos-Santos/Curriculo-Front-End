@@ -29,5 +29,5 @@ export default function ChangingText() {
     return () => clearTimeout(timeout);
   }, [subIndex, isDeleting, index]);
 
-  return <span className="text-orange-400">{text}</span>;
+  return <span className="text-orange-500">{text}</span>;
 }
