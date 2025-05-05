@@ -1,6 +1,7 @@
 import React from "react";
 import ChangingText from "./components/ChangindText/ChangingText";
 import Layout from "./components/layout";
+import ProjetoCard from "./components/ProjetoCard/ProjetoCard";
 
 export default function Home() {
   return (
@@ -96,7 +97,24 @@ export default function Home() {
               </div>
             </div>
 
+
+
           </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <ProjetoCard
+                titulo="Dashboard de Clima"
+                descricao="Aplicação para visualização de dados climáticos em tempo real usando APIs públicas."
+                link="https://dashboard-clima-link.com"
+              />
+
+              <ProjetoCard
+                titulo="Jogo da Memória"
+                descricao="Jogo da memória interativo feito com React, focando em lógica e interatividade."
+                link="https://jogo-da-memoria-link.com"
+              />
+            </div>
+
+
 
 
         </main>
